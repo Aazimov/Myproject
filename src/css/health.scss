@@ -1,0 +1,149 @@
+.health{
+  padding: 100px 0 50px;
+
+&__row{
+  display: flex;
+  column-gap: 140px;
+  justify-content: center;
+  align-items: center;
+}
+&__img{
+  width: 650px;
+  height: 477px;
+}
+  &__title{
+    font-family: Mulish,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+
+    &_before{
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 56px;
+        height: 2px;
+        background: #000000;
+        border-radius: 5px;
+        bottom: -26px;
+
+      }
+    }
+  }
+  &__desc{
+    font-family: Mulish,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+    margin: 37px 0 37px;
+
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .health{
+    padding: 10px 15px 50px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .health{
+    padding: 0 20px 50px;
+    &__row{
+        display: flex;
+        column-gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 46px;
+    }
+    &__desc{
+
+      font-size: 16px;
+      line-height: 26px;
+
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .health{
+    padding: 0 20px 50px;
+
+    &__row{
+      display: flex;
+      column-gap: 20px;
+
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 36px;
+    }
+    &__desc{
+
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__img{
+      width: 500px;
+      height: 400px;
+    }
+  }
+
+}
+
+
+@media (max-width: 425px) {
+  .health{
+    padding: 0 20px 20px;
+
+
+    &__row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+
+    &_before{
+       position: relative;
+       &::before{
+         left: 50%;
+         transform: translate(-50%, 0px);
+
+       }
+     }
+  }
+    &__desc{
+      text-align: center;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__img{
+      display: none;
+    }
+
+  }
+  .health__button{
+    display: none;
+  }
+
+}

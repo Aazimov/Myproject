@@ -1,0 +1,145 @@
+.header{
+  padding: 100px 0 100px;
+&__totop {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: #00000050;
+  top: 70%;
+  right: 10px;
+  cursor: pointer;
+  z-index: 500;
+  &:hover{
+    background: #458FF6;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #FFFFFF;
+    top: 40%;
+    left: 7px;
+    transform: rotate(-45deg);
+
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #FFFFFF;
+    top: 40%;
+    right: 7px;
+    transform: rotate(45deg);
+
+  }
+
+}
+
+  &__con {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background: #FFFFFF;
+    z-index: 500;
+
+
+
+  }
+
+
+  &__top{
+    padding: 20px 0 16px;
+    border-bottom: 1px solid #DEDEFF;
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+  &__icons{
+    display: flex;
+    column-gap: 21px;
+  }
+  &__social{
+    color: black;
+
+    &:hover{
+      color: #E6514A;
+    }
+  }
+  &__numbers{
+    display: flex;
+    column-gap: 28px;
+  }
+  &__numbers-icon{
+     color: red;
+    &_green{
+      color: green;
+    }
+   }
+  &__numbers-tel{
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: black;
+    &:hover{
+      color: red;
+    }
+  }
+
+  &__bottom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+
+
+&__navigation{
+  display: flex;
+  column-gap: 102px;
+  align-items: center;
+}
+  &__menu{
+    display: flex;
+    column-gap: 32px;
+  }
+  &__link{
+    font-family: Mulish,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #1F1534;
+
+    &:hover{
+
+      font-size: 18px;
+
+      color: #E6514A;
+    }
+  }
+  &__button-phone{
+    transform: rotate(-45deg);
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  .header__bottom{
+    justify-content: space-around;
+  }
+  .header__top{
+    justify-content: center;
+    column-gap: 500px;
+  }
+}

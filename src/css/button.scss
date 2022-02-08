@@ -1,0 +1,46 @@
+.button{
+    width: 229px;
+    height: 48px;
+    background: #458FF6;
+    border-radius: 40px;
+    font-family: Mulish,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    &:hover{
+      background: #3035C4;
+    }
+
+  }
+
+
+@media (max-width: 425px) {
+    .button {
+        width: 150px;
+        height: 28px;
+        background: #458FF6;
+        border-radius: 30px;
+        font-family: Mulish, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 40px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        &:hover {
+            background: #3035C4;
+        }
+    }
+}

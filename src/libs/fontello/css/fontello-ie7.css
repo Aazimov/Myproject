@@ -1,0 +1,21 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+
+  /* fix buttons height */
+  line-height: 1em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+
+.icon-ok-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-phone-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf098;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099;&nbsp;'); }
+.icon-youtube-play { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16a;&nbsp;'); }
+.icon-vkontakte { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf189;&nbsp;'); }
+.icon-facebook-official { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf230;&nbsp;'); }
+.icon-volume-control-phone { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf2a0;&nbsp;'); }
+.icon-telegram { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf2c6;&nbsp;'); }
+.icon-instagram { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf32d;&nbsp;'); }
